@@ -19,3 +19,6 @@
 3：
 一般想好了在浏览器里面直接写。。偶尔实在不知道出了什么问题才打开eclipse来Debug
 感觉绝大多数Easy和Medium的题不需要IDE
+
+
+1[TwoSum](1/solution.java)(easy)
