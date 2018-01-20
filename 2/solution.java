@@ -53,17 +53,17 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode p = l1, q = l2, curr = dummyHead;
     int carry = 0;
     while (p != null || q != null) {
-        int x = (p != null) ? p.val : 0;
-        int y = (q != null) ? q.val : 0;
-        int sum = carry + x + y;
-        carry = sum / 10;
-        curr.next = new ListNode(sum % 10);
+        int x = (p != null) ? p.val : 0;//得到第一个数字
+        int y = (q != null) ? q.val : 0;//得到第二个数字
+        int sum = carry + x + y;//类似加法器的进位加法
+        carry = sum / 10;//进位取整
+        curr.next = new ListNode(sum % 10);//取余将余数，并将值保存在新的链表中
         curr = curr.next;
         if (p != null) p = p.next;
         if (q != null) q = q.next;
     }
     if (carry > 0) {
-        curr.next = new ListNode(carry);
+        curr.next = new ListNode(carry);//处理进位
     }
-    return dummyHead.next;
+    return dummyHead.next;//返回
 }
