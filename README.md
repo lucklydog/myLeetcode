@@ -21,6 +21,9 @@
 感觉绝大多数Easy和Medium的题不需要IDE
 
 
+字符串的长度为s.length();数组为s.length
+substring的切割字符串是从下标start开始 切到end-1；
+
 1[TwoSum](1/solution.java)(easy)
 
 2[Add Two numbers](2/solution.java)
