@@ -96,5 +96,30 @@ leetcode accepted！！！
   }
  }
 
+实现3：
+将字符串转化再判断是否为负数
+与实现1相同，空间复杂度应该降低了，代码量也减少
 
- 实现1用时短
+
+ class Solution {
+  public int reverse(int x)
+  {
+      int result = 0;
+      String s = String.valueOf(x);
+      String sb = new StringBuilder(s).reverse().toString();
+      if(sb.charAt(sb.length()-1) == '-'){
+          String newS = sb.substring(0,s.length()-1);
+          try{
+               result = -1* Integer.parseInt(newS);
+          }catch(Exception e){
+              return 0;
+          }
+      }
+      else{
+          try{
+             result = Integer.parseInt(sb);
+          }catch(Exception e){return 0;}
+      }
+     return result;
+  }
+}
