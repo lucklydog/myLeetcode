@@ -97,6 +97,7 @@ leetcode accepted！！！
  }
 
 实现3：
+利用jdk自带函数StringBuilder(str).reverse()
 将字符串转化再判断是否为负数
 与实现1相同，空间复杂度应该降低了，代码量也减少
 
