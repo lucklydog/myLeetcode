@@ -23,4 +23,4 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 就是给出一个字符串，找出最长的子字符串，并输出其长度
 
-[代码](3/Solution.java)
+[代码](myLeetcode/3/Solution.java)
